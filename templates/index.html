@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="google-site-verification" content="mgfw17PeVibioq-YGXiJ59hoOEJGAhuNWjL-5ejb16A" />
+    <meta charset="utf-8" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='princ.css') }}">
+    <script src="menu.js"></script>
+    <title>Le foot</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1165/1165218.png" />
+    <!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://bozomonke.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/bozomonke.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{{ url_for('index') }}">Menu</a>
+        <a href="{{ url_for('enationale') }}">Equipes nationales</a>
+        <a href="{{ url_for('joueurs') }}">Joueurs connus</a>
+    </div>
+    <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&nbsp;&nbsp;&#9776; Menu</span>
+    <h1 style="background-color: lightblue; text-align: center">
+        Le football
+        <img src="https://static.vecteezy.com/system/resources/previews/013/362/736/non_2x/football-soccer-transparent-free-png.png"
+            alt="hello" width="60" title="source: wikipedia" />
+    </h1>
+    <p style="font-family: cursive; color: antiquewhite">
+        <!-- Par Eric, Sami et Ala de la CSI, projet du cours de SNT-->
+    </p>
+    <marquee scrollamount="12" style="
+        font-family: impact;
+        font-size: 30px;
+        background: rgb(159, 200, 222);
+      ">
+        L' euro commence le 14 juin 2024!!
+    </marquee>
+
+    <h2 style="color: Lightblue">Introduction</h2>
+    <p style="font-family: verdana">
+        Le football, est un sport d'équipe passionnant et populaire à travers le
+        monde. Il est joué par deux équipes de onze joueurs chacune, dont
+        l'objectif principal est de marquer des buts en envoyant un ballon dans le
+        filet adverse en utilisant principalement leurs pieds, mais aussi leur
+        tête et leur corps, à l'exception de leurs bras et de leurs mains.
+        <br /><br />
+        <img src="https://images.pexels.com/photos/3148452/pexels-photo-3148452.jpeg" width="60%" />
+        <cap style="font-family: Cambria, serif; font-size: 15px">
+            <br /><em>Source: Stanley Morales</em>
+        </cap>
+        <br /><br />
+        <img src="https://cdn.britannica.com/85/139485-050-BCF84C18/FIFA-World-Cup-trophy.jpg" style="float: right"
+            width="8%" />
+        Le terrain de jeu est rectangulaire, avec deux buts de chaque côté, et les
+        matchs peuvent durer jusqu'à 90 minutes, divisées en deux mi-temps de 45
+        minutes chacune. Les règles du jeu sont régies par la Fédération
+        Internationale de Football Association (<a style="font-size: 20px; color: aqua"
+            href="https://www.fifa.com/fifaplus/en"><u>FIFA</u></a>), qui organise également la Coupe du Monde de la
+        FIFA, l'un des
+        événements sportifs les plus regardés et les plus suivis au monde qui à
+        été récemment remportée par l'Argentine en 2022.
+
+        <br /><br />
+        Le football est également joué au niveau professionnel dans de nombreux
+        pays, avec des ligues et des championnats nationaux prestigieux tels que
+        la Premier League anglaise, la Liga espagnole, la Serie A italienne, la
+        Bundesliga allemande et la Ligue 1 française, en tout. Ces compétitions
+        attirent des millions de fans chaque semaine, qui suivent leurs équipes
+        préférées et leurs joueurs stars.
+        <br /><br />
+        En plus des compétitions de clubs, il existe également des compétitions
+        internationales pour les équipes nationales, telles que l'Euro, la Copa
+        America et la Coupe d'Afrique des Nations. Ces tournois mettent en vedette
+        les meilleurs joueurs de chaque pays et offrent une occasion unique de
+        voir des matchs passionnants et de soutenir son équipe nationale.
+
+        <br />
+        <br /><img src="https://media.balls.ie/uploads/2014/04/RONALDOOOO.gif" /><br />
+        <cap style="font-family: Cambria, serif; font-size: 15px"><em>Christiano Ronaldo, le meilleur joueur au monde
+                !!! </em></cap>
+    </p>
+    <br /><a style="font-size: 30px; color: aqua" href="https://www.fifa.com/fifaplus/en"><u>Site officiel de la
+            FIFA</u></a>
+<div class="powr-comments" id="b5bd010d_1707226901"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!-- Default Statcounter code for foot https://footrebeu.neocities.org -->
+<script type="text/javascript">
+var sc_project=12966031; 
+var sc_invisible=1; 
+var sc_security="75f18fd4"; 
+</script>
+
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="hit counter"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12966031/0/75f18fd4/1/" alt="hit counter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<script async defer src="https://scripts.withcabin.com/hello.js"></script>
+<!-- End of Statcounter Code -->
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+h1 {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 0.2px;
+    color: rgb(39, 204, 225);
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: -10px 10px 10px rgba(16, 4, 164, 0.81);
+  }
+  
+  p {
+    color: rgb(212, 219, 249);
+    font-family: Futura;
+    font-size: 18px;
+  }
+  
+  button {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right,
+        #1783a4 0%,
+        #239ecb 50%,
+        #24dbd4 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+  }
+  
+  button:hover {
+    background: #1c6ea4;
+  }
+  
+  button:active {
+    background: #144e75;
+  }
+  
+  body {
+    margin-right: 10%;
+    margin-left: 18%;
+    background-image: url("https://images.unsplash.com/photo-1546608235-3310a2494cdf?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29jY2VyJTIwZmllbGR8ZW58MHx8MHx8fDA%3D");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  a:link {
+    color: rgb(191, 127, 191);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("https://static.vecteezy.com/system/resources/previews/033/114/763/large_2x/crowded-3d-pitch-rendered-stadium-showcases-bustling-soccer-action-vertical-mobile-wallpaper-ai-generated-free-photo.jpg");
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightblue;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  span {
+    color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }

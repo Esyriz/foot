@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Joueurs connus</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/606/606545.png" />
+  <style>
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)),
+        url("https://static.vecteezy.com/system/resources/previews/033/114/763/large_2x/crowded-3d-pitch-rendered-stadium-showcases-bustling-soccer-action-vertical-mobile-wallpaper-ai-generated-free-photo.jpg");
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: lightblue;
+      display: block;
+      transition: 0.3s;
+    }
+
+    p4 {
+      color: #f1f1f1;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      padding-top: 30px;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: #777;
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+      position: relative;
+      opacity: 0.75;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bgimg-1 {
+      background-image: url("https://www.telegraph.co.uk/content/dam/football/2021/03/10/TELEMMGLPICT000253002935_trans_NvBQzQNjv4BqhapkVlcy4J6MLIykjOByPsqJWpcUqHU07f9VBAsgcY0.jpeg");
+      min-height: 100%;
+    }
+
+    .bgimg-2 {
+      background-image: url("https://www.lequipe.fr/_medias/img-photo-jpg/cristiano-ronaldo-a-ouvert-le-score-pour-le-portugal-face-au-ghana-jeudi-charlotte-wilson-offside-pr/1500000001715921/0:0,1996:1330-828-552-75/d544e.jpg");
+      min-height: 800px;
+    }
+
+    .bgimg-3 {
+      background-image: url("https://pbs.twimg.com/media/D_DMWrDWwAAVIby?format=jpg&name=4096x4096");
+      min-height: 1000px;
+    }
+
+    .bgimg-4 {
+      background-image: url("https://www.psg.fr/media/231161/diapo-juventus-28-mbappe.jpg?anchor=center&mode=crop&width=800&height=450&quality=60");
+      min-height: 1000px;
+    }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 5px;
+    }
+
+    h1 {
+      font-family: Impact, Charcoal, sans-serif;
+      letter-spacing: 0.2px;
+      color: rgb(39, 204, 225);
+      font-size: 100px;
+      line-height: 1;
+      text-shadow: -10px 10px 10px rgba(16, 4, 164, 0.81);
+    }
+
+    p {
+      font-size: 30px;
+      color: darkblue;
+      font-family: baskerville;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="position: relative">
+    <div style="
+          background-color: lightblue;
+          text-align: center;
+          padding: 1px 1px;
+        ">
+      <h1 style="text-align: center; background-color: lightblue">
+        Joueurs connus
+      </h1>
+      &darr;
+    </div>
+  </div>
+
+  <p4 style="font-size: 40px; cursor: pointer; color: red" onclick="openNav()">&nbsp;&nbsp; &#9776; Menu</p4>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="{{ url_for('index') }}">Menu</a>
+    <a href="{{ url_for('enationale') }}">Equipes nationales</a>
+    <a href="{{ url_for('joueurs') }}">Joueurs connus</a>
+  </div>
+
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="border" style="
+            background-color: transparent;
+            font-size: 100px;
+            color: red;
+            font-family: baskerville;
+          ">Cristiano Ronaldo</span><br />
+      <p style="color:cyan">Portugal</p>
+      <p></p>
+    </div>
+  </div>
+
+  <div style="
+        color: #777;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        text-align: justify;
+      "></div>
+
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border" style="
+            background-color: transparent;
+            font-size: 100px;
+            color: darkblue;
+            font-family: timesnewroman;
+          ">Riyad Mahrez</span>
+      <br />
+      <p>Alg&eacute;rie</p>
+      <p></p>
+    </div>
+  </div>
+
+  <div style="position: relative">
+    <div style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 20px;
+          text-align: justify;
+        "></div>
+
+    <div class="bgimg-3">
+      <div class="caption">
+        <span class="border" style="
+              background-color: transparent;
+              font-size: 100px;
+              color: black;
+              font-family: bodoni;
+            ">Zinedine Zidane</span>
+        <br />
+        <p>France</p>
+        <p></p>
+      </div>
+    </div>
+
+    <div style="position: relative">
+      <div style="
+            color: #ddd;
+            background-color: darkblue;
+            text-align: center;
+            padding: 20px;
+            text-align: justify;
+          "></div>
+
+      <div class="bgimg-4">
+        <div class="caption">
+          <span class="border" style="
+                background-color: transparent;
+                font-size: 110px;
+                color: darkred;
+                font-family: baskerville;
+              ">Kylian Mbappe</span><br />
+          <p style="color: cyan"><b>France</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

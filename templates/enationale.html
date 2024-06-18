@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Equipes nationales</title>
+
+    <link rel="icon" href="https://www.freeiconspng.com/thumbs/world-icon-png/world-icon-png-6.png" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='princ.css') }}">
+    <script src="menu.js"></script>
+</head>
+
+<body style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(https://i.pinimg.com/originals/db/a6/72/dba6727fa68d4a7d8ba32b646eab8af8.jpg);
+    ">
+    <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&nbsp;&nbsp; &#9776; Menu</span>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{{ url_for('index') }}">Menu</a>
+        <a href="{{ url_for('enationale') }}">Equipes nationales</a>
+        <a href="{{ url_for('joueurs') }}">Joueurs connus</a>
+    </div>
+    <h1 style="font-size: 70px">Equipes Nationales</h1>
+    <p>
+        Les organisations Pour comprendre les différentes compétitions, il faut
+        tout d’abord connaître les différentes organisations de football à
+        l’origine de celles-ci : La FIFA : La Fédération Internationale Football
+        Association est née en 1904 grâce au journaliste Robert Guérin. C’est une
+        association à but non lucratif, dont la visée est le développement du
+        football dans le monde ainsi que la gestion de ses compétitions.Il existe
+        plusieurs équipesnationales <br />
+        L’UEFA : Fondée en 1959 à Bâle en Suisse, l'Union des Associations
+        Européennes de Football plus connue sous le nom d’UEFA est une association
+        regroupant les fédérations nationales d'Europe. Son rôle est de gérer et
+        développer le football à l'échelon continental. Son siège est actuellement
+        situé à Nyon en Suisse et elle est présidée par Michel Platini. ya les
+        clubs et les equipes nationales Les équipes nationales de football sont
+        familièrement appelées par un surnom. Pour la plupart d'entre elles, le
+        surnom a un rapport avec la couleur du maillot (les bleus de France, les
+        diables rouges de Belgique etc.). Le Brésil et l'Allemagne sont surnommés
+        simplement par rapport au mot équipe dans la langue nationale du pays en
+        question.
+    </p>
+    <img src="https://www.foot-paul.com/wp-content/uploads/sites/11/2022/06/Groupes-CDM-2022.jpg" width="50%"
+        alt="pays" /><br />
+    <cap style="font-family: Cambria, serif; font-size: 15px; color: white"><em>Poules de la coupe du monde 2022 </em>
+    </cap>
+</body>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>
