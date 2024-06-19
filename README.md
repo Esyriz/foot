@@ -1,5 +1,5 @@
 
 # football
-Ceci est un site sur le foot
-Il est hébergé sur azure
-[lefoot.azurewebsites.com]
+Ceci est un site sur le foot <br>
+Il est hébergé sur azure<br>
+[lefoot.azurewebsites.com](https://lefoot.azurewebsites.net/)
