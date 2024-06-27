@@ -2,29 +2,12 @@
 <html>
 
 <head>
-
     <meta name="google-site-verification" content="mgfw17PeVibioq-YGXiJ59hoOEJGAhuNWjL-5ejb16A" />
     <meta charset="utf-8" />
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='princ.css') }}">
     <script src="menu.js"></script>
-    <title>Le foot</title>
+    <title>Le football</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1165/1165218.png" />
-    <!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://bozomonke.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='//cdn.matomo.cloud/bozomonke.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-
 </head>
 
 <body>
@@ -33,6 +16,7 @@
         <a href="{{ url_for('index') }}">Menu</a>
         <a href="{{ url_for('enationale') }}">Equipes nationales</a>
         <a href="{{ url_for('joueurs') }}">Joueurs connus</a>
+        <a href="{{ url_for('paris') }}">Paris</a>
     </div>
     <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&nbsp;&nbsp;&#9776; Menu</span>
     <h1 style="background-color: lightblue; text-align: center">

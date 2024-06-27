@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url("https://images.unsplash.com/photo-1546608235-3310a2494cdf?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29jY2VyJTIwZmllbGR8ZW58MHx8MHx8fDA%3D");
+        }
+    </style>
+    <head>
+        <meta name="google-site-verification" content="mgfw17PeVibioq-YGXiJ59hoOEJGAhuNWjL-5ejb16A" />
+        <meta charset="utf-8" />
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='princ.css') }}">
+        <script src="menu.js"></script>
+        <title>Le foot</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1165/1165218.png" />
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="{{ url_for('index') }}">Menu</a>
+            <a href="{{ url_for('enationale') }}">Equipes nationales</a>
+            <a href="{{ url_for('joueurs') }}">Joueurs connus</a>
+            <a href="{{ url_for('paris') }}">Paris</a>
+        </div>
+        <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&nbsp;&nbsp;&#9776; Menu</span>
+        <h1 style="background-color: lightblue; text-align: center">
+            Les paris
+            <img src="https://static.vecteezy.com/system/resources/previews/013/362/736/non_2x/football-soccer-transparent-free-png.png"
+                alt="hello" width="60" title="source: wikipedia" />
+        </h1>
+        
+        
+        <p style="font-family: cursive; color: antiquewhite">
+            Pariez ici gratuitement </p>
+        <form action="{{ url_for('submit') }}" method='POST'>
+            <p style="font-size: 20px; font-family: normal">Nom:<br>
+            <input type="text" name="fname"><br><br>
+            21 juin - Groupe D<br>
+            <input type="radio" name="1" value="France">
+            <label for="France">France</label><br>
+            <input type="radio" name="1" value="Pays-Bas">
+            <label for="Pays-Bas">Pays-Bas</label><br>
+            <input type="radio" name="1" value="Egal">
+            <label for="eg">Égalité</label>
+            <br><br>
+            21 juin - Groupe D<br>
+            <input type="radio" name="2" value="Pologne">
+            <label for="Pologne">Pologne</label><br>
+            <input type="radio" name="2" value="Autriche">
+            <label for="Autriche">Autriche</label><br>
+            <input type="radio" name="2" value="Egal">
+            <label for="eg">Égalité</label>
+            <br><br>
+            21 juin - Groupe E<br>
+            <input type="radio" name="3" value="Slovaquie">
+            <label for="Slovaquie">Slovaquie</label><br>
+            <input type="radio" name="3" value="Ukraine">
+            <label for="Ukraine">Ukraine</label><br>
+            <input type="radio" name="3" value="Egal">
+            <label for="eg">Égalité</label>
+            <br><br>
+            22 juin - Groupe F<br>
+            <input type="radio" name="4" value="Géorgie ">
+            <label for="Géorgie ">Géorgie </label><br>
+            <input type="radio" name="4" value=" Tchéquie">
+            <label for=" Tchéquie"> Tchéquie</label><br>
+            <input type="radio" name="4" value="Egal">
+            <label for="eg">Égalité</label>
+            <br><br>
+            22 juin - Groupe F<br>
+            <input type="radio" name="5" value="Turquie ">
+            <label for="Turquie ">Turquie </label><br>
+            <input type="radio" name="5" value=" Portugal ">
+            <label for=" Portugal "> Portugal </label><br>
+            <input type="radio" name="5" value="Egal">
+            <label for="eg">Égalité</label>
+            <br><br>
+            22 juin - Groupe E<br>
+            <input type="radio" name="6" value="Belgique ">
+            <label for="Belgique ">Belgique </label><br>
+            <input type="radio" name="6" value=" Roumanie ">
+            <label for=" Roumanie "> Roumanie </label><br>
+            <input type="radio" name="6" value="Egal">
+            <label for="eg">Égalité</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            </p>
+        </form>
+
+
+
+
+
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "200px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+    </body1>
+</html>
